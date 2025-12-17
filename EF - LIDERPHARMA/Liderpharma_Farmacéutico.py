@@ -1,18 +1,3 @@
-"""
-Aplicación de escritorio para gestión de inventario farmacéutico
-Características implementadas (versión inicial):
-- Panel de inicio de sesión para usuarios autorizados.
-- Panel principal del farmacéutico con: listado por categorías, tabla de productos, ver/actualizar stock, agregar fecha de caducidad, generar reporte CSV.
-- Diálogo de consulta por criterios de selección (rango de fechas de contabilización).
-- Panel de control de despacho: captura datos del cliente, direcciones, condición de pago, tipo de documento y composición de pedido (tabla editable).
-- Persistencia básica con SQLite (archivo 'farmacia.db').
-
-Requisitos: Python 3.8+, PyQt5 (pip install PyQt5)
-Ejecutar: python Aplicación_Inventario_Farmacia.py
-
-Nota: esto es una implementación funcional pero básica pensada como punto de partida. Está comentada en español para facilitar adaptaciones.
-"""
-
 import sys
 import sqlite3
 import csv
@@ -497,3 +482,4 @@ if __name__ == '__main__':
     mw = MainWindow()
     mw.show()
     sys.exit(app.exec_())
+
